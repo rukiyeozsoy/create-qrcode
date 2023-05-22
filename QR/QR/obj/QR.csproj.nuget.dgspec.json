@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\QR\\QR\\QR\\QR\\QR.csproj": {}
+    "C:\\Users\\ASUS\\Documents\\GitHub\\create-qrcode\\QR\\QR\\QR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\QR\\QR\\QR\\QR\\QR.csproj": {
+    "C:\\Users\\ASUS\\Documents\\GitHub\\create-qrcode\\QR\\QR\\QR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\QR\\QR\\QR\\QR\\QR.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Documents\\GitHub\\create-qrcode\\QR\\QR\\QR.csproj",
         "projectName": "QR",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\QR\\QR\\QR\\QR\\QR.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Documents\\GitHub\\create-qrcode\\QR\\QR\\QR.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\QR\\QR\\QR\\QR\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Documents\\GitHub\\create-qrcode\\QR\\QR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

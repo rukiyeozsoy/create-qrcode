@@ -34,7 +34,6 @@
             iconButton6 = new FontAwesome.Sharp.IconButton();
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             dataGridView1 = new System.Windows.Forms.DataGridView();
-            ıconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -120,29 +119,12 @@
             dataGridView1.TabIndex = 44;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // ıconButton1
-            // 
-            ıconButton1.BackColor = System.Drawing.Color.RosyBrown;
-            ıconButton1.ForeColor = System.Drawing.Color.White;
-            ıconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            ıconButton1.IconColor = System.Drawing.Color.Black;
-            ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            ıconButton1.Location = new System.Drawing.Point(1072, 796);
-            ıconButton1.Margin = new System.Windows.Forms.Padding(4);
-            ıconButton1.Name = "ıconButton1";
-            ıconButton1.Size = new System.Drawing.Size(140, 42);
-            ıconButton1.TabIndex = 46;
-            ıconButton1.Text = "Analizleri Yenile";
-            ıconButton1.UseVisualStyleBackColor = false;
-            ıconButton1.Click += ıconButton1_Click;
-            // 
             // QrCode
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.MistyRose;
             ClientSize = new System.Drawing.Size(1834, 979);
-            Controls.Add(ıconButton1);
             Controls.Add(pictureBox1);
             Controls.Add(iconButton8);
             Controls.Add(textQR);
@@ -167,6 +149,5 @@
         private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private FontAwesome.Sharp.IconButton ıconButton1;
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ebvPa3OYpn7WiAn61mdGpZ+ltQtIDtL94RfGsNflOYLcHFp08i8Hpx8bWPjCvO/R5O9QjCb16MgegrzFShoG7Q==",
+  "dgSpecHash": "O0+rWGkv0x0U1Uvvjbv5T9ZKyBijMyljGo+cI1mVFZnnCbkhkhC2dVs2ZeTgLJKUR1Qbv4QBmgBoaGCONnglzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\QR\\QR\\QR\\QR\\QR.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Documents\\GitHub\\create-qrcode\\QR\\QR\\QR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\fastreport.compat\\2023.1.0\\fastreport.compat.2023.1.0.nupkg.sha512",

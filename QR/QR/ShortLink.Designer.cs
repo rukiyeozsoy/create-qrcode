@@ -33,8 +33,12 @@
             iconButton8 = new FontAwesome.Sharp.IconButton();
             textLink = new System.Windows.Forms.TextBox();
             Linkiniz = new System.Windows.Forms.LinkLabel();
+            ıconButton1 = new FontAwesome.Sharp.IconButton();
+            textBox1 = new System.Windows.Forms.TextBox();
+            dataGridView1 = new System.Windows.Forms.DataGridView();
             iconButton6 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)ıconPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // iconButton6
@@ -74,7 +78,7 @@
             iconButton8.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton8.IconColor = System.Drawing.Color.Black;
             iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton8.Location = new System.Drawing.Point(346, 322);
+            iconButton8.Location = new System.Drawing.Point(344, 527);
             iconButton8.Margin = new System.Windows.Forms.Padding(4);
             iconButton8.Name = "iconButton8";
             iconButton8.Size = new System.Drawing.Size(140, 42);
@@ -85,7 +89,7 @@
             // 
             // textLink
             // 
-            textLink.Location = new System.Drawing.Point(31, 265);
+            textLink.Location = new System.Drawing.Point(29, 470);
             textLink.Margin = new System.Windows.Forms.Padding(0);
             textLink.Name = "textLink";
             textLink.Size = new System.Drawing.Size(455, 31);
@@ -94,10 +98,51 @@
             // Linkiniz
             // 
             Linkiniz.AutoSize = true;
-            Linkiniz.Location = new System.Drawing.Point(29, 464);
+            Linkiniz.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            Linkiniz.Location = new System.Drawing.Point(29, 636);
             Linkiniz.Name = "Linkiniz";
-            Linkiniz.Size = new System.Drawing.Size(0, 25);
+            Linkiniz.Size = new System.Drawing.Size(143, 32);
             Linkiniz.TabIndex = 45;
+            Linkiniz.TabStop = true;
+            Linkiniz.Tag = "";
+            Linkiniz.Text = "Kısa Linkiniz";
+            // 
+            // ıconButton1
+            // 
+            ıconButton1.BackColor = System.Drawing.Color.RosyBrown;
+            ıconButton1.ForeColor = System.Drawing.Color.White;
+            ıconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            ıconButton1.IconColor = System.Drawing.Color.Black;
+            ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            ıconButton1.Location = new System.Drawing.Point(29, 299);
+            ıconButton1.Margin = new System.Windows.Forms.Padding(4);
+            ıconButton1.Name = "ıconButton1";
+            ıconButton1.Size = new System.Drawing.Size(140, 42);
+            ıconButton1.TabIndex = 47;
+            ıconButton1.Text = "Başlık";
+            ıconButton1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new System.Drawing.Point(173, 305);
+            textBox1.Margin = new System.Windows.Forms.Padding(0);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(311, 31);
+            textBox1.TabIndex = 46;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = System.Drawing.Color.MistyRose;
+            dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.GridColor = System.Drawing.Color.MistyRose;
+            dataGridView1.Location = new System.Drawing.Point(567, 72);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.RowTemplate.Height = 33;
+            dataGridView1.Size = new System.Drawing.Size(645, 667);
+            dataGridView1.TabIndex = 48;
             // 
             // ShortLink
             // 
@@ -105,14 +150,20 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.MistyRose;
             ClientSize = new System.Drawing.Size(1834, 979);
+            Controls.Add(dataGridView1);
+            Controls.Add(ıconButton1);
+            Controls.Add(textBox1);
             Controls.Add(Linkiniz);
             Controls.Add(iconButton8);
             Controls.Add(textLink);
             Controls.Add(ıconPictureBox1);
             Controls.Add(iconButton6);
             Name = "ShortLink";
+            Padding = new System.Windows.Forms.Padding(3);
             Text = "ShortLink";
+            Load += ShortLink_Load;
             ((System.ComponentModel.ISupportInitialize)ıconPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,5 +175,8 @@
         private FontAwesome.Sharp.IconButton iconButton8;
         private System.Windows.Forms.TextBox textLink;
         private System.Windows.Forms.LinkLabel Linkiniz;
+        private FontAwesome.Sharp.IconButton ıconButton1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
