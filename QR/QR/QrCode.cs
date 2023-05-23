@@ -38,10 +38,6 @@ namespace QR
 
         private void QRCodeScanned(string scannedData)
         {
-            // QR kod tarandığında bu metoda taranan QR kodun değeri geçirilir
-            // Veritabanında ilgili QR kodun analizini güncellemek için burada gerekli işlemleri yapabilirsiniz
-
-            // Örneğin, QR kodunun tarama sonucunu analiz formunda güncelleyebilirsiniz
             Analiz analizForm = System.Windows.Forms.Application.OpenForms.OfType<Analiz>().FirstOrDefault();
             if (analizForm != null)
             {
@@ -50,14 +46,17 @@ namespace QR
         }
 
 
-        private void InsertQrCodeToDatabase(Image qrImage, string qrData, int qrCodeSize)
+        private void InsertQrCodeToDatabase(string Title, Image qrImage, string qrData, int qrCodeSize)
         {
-            string kayitEkleSorgusu = "INSERT INTO QrCodes (Image, QrData, Size) VALUES (@Image, @QrData, @Size)";
+            string kayitEkleSorgusu = "INSERT INTO QrCodes (Title, Image, QrData, Size) VALUES (@Title, @Image, @QrData, @Size)";
             SqlCommand komut = new SqlCommand(kayitEkleSorgusu, baglanti);
             komut.Parameters.AddWithValue("@Image", ConvertImageToByteArray(qrImage));
             komut.Parameters.AddWithValue("@QrData", qrData);
+            komut.Parameters.AddWithValue("@Title", Title);
             komut.Parameters.AddWithValue("@Size", qrCodeSize);
             komut.ExecuteNonQuery();
+
+            QRCodeScanned(qrData);
         }
 
         private void iconButton8_Click(object sender, EventArgs e)
@@ -76,26 +75,34 @@ namespace QR
             // QR kodunun boyutu
             int qrCodeSize = 13;
 
+            string Title = textBox1.Text;
+
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
             // Veritabanına QR kodu verisini, boyutunu ve diğer bilgileri kaydetmek için
-            InsertQrCodeToDatabase(qrImage, qrData, qrCodeSize);
+            InsertQrCodeToDatabase(Title, qrImage, qrData, qrCodeSize);
+
+            QRCodeScanned(qrData);
         }
         private void QrCode_Load_1(object sender, EventArgs e)
         {
-            string sorgu = "SELECT QrData, Image FROM QrCodes ORDER BY ID DESC";
+            string sorgu = "SELECT Title, QrData, Image FROM QrCodes ORDER BY ID DESC";
             SqlDataAdapter adapter = new SqlDataAdapter(sorgu, baglanti);
             DataTable QrCodes = new DataTable();
             adapter.Fill(QrCodes);
 
+
             dataGridView1.DataSource = QrCodes; // DataGridView kontrolüne verileri bağlama
 
             // Sütun genişliklerini ayarlama
-            dataGridView1.Columns["QrData"].Width = 200; // QrData sütunu için genişlik
-            dataGridView1.Columns["Image"].Width = 400;// Image sütunu için genişlik
+            dataGridView1.Columns["Title"].Width = 150; // Title sütunu için genişlik
+            dataGridView1.Columns["QrData"].Width = 150; // QrData sütunu için genişlik
+            dataGridView1.Columns["Image"].Width = 310;// Image sütunu için genişlik
 
-            dataGridView1.RowTemplate.Height = 400;
+            dataGridView1.RowTemplate.Height = 310;
+
+            dataGridView1.AllowUserToAddRows = false;
         }
 
 

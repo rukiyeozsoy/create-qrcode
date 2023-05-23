@@ -13,7 +13,6 @@ namespace QR
 {
     public partial class Analiz : Form
     {
-
         string connectionString = "server = Rukiye; database = QrDb; integrated security = true;";
         private SqlConnection baglanti;
         public Analiz()
@@ -21,6 +20,7 @@ namespace QR
             InitializeComponent();
             baglanti = new SqlConnection(connectionString);
         }
+
 
         public void UpdateTaramaSonucu(string qrData)
         {
@@ -63,6 +63,7 @@ namespace QR
 
                 dataGridView1.DataSource = dataTable;
             }
+            dataGridView1.AllowUserToAddRows = false;
         }
     }
 }

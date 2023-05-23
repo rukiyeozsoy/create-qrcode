@@ -49,7 +49,7 @@ namespace QR
         {
             string longUrl = textLink.Text;
 
-            // Burada kendi URL kısaltma mantığınızı uygulayabilirsiniz
+
             string shortUrl = ShortenUrl(longUrl);
 
             LinkLabel.Link link = new LinkLabel.Link();
@@ -62,7 +62,7 @@ namespace QR
 
             shortenedUrls.Add(shortUrl, longUrl);
 
-            InsertLinkTableToDatabase("Link Title", longUrl, shortUrl); // Geçici olarak "Link Title" kullanıldı, isteğe göre değiştirilebilir
+            InsertLinkTableToDatabase("Link Title", longUrl, shortUrl); 
 
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -82,8 +82,6 @@ namespace QR
                 Process.Start(psi);
             }
         }
-
-        
 
         private string ShortenUrl(string longUrl)
         {
@@ -141,7 +139,7 @@ namespace QR
 
                 shortenedUrls.Add(shortLink, longLink);
             }
-
+            dataGridView1.AllowUserToAddRows = false;
             baglanti.Close();
         }
     }

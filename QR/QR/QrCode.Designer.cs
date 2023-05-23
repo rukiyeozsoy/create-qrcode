@@ -34,6 +34,8 @@
             iconButton6 = new FontAwesome.Sharp.IconButton();
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             dataGridView1 = new System.Windows.Forms.DataGridView();
+            ıconButton1 = new FontAwesome.Sharp.IconButton();
+            textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -56,7 +58,7 @@
             iconButton8.IconChar = FontAwesome.Sharp.IconChar.None;
             iconButton8.IconColor = System.Drawing.Color.Black;
             iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton8.Location = new System.Drawing.Point(346, 322);
+            iconButton8.Location = new System.Drawing.Point(344, 372);
             iconButton8.Margin = new System.Windows.Forms.Padding(4);
             iconButton8.Name = "iconButton8";
             iconButton8.Size = new System.Drawing.Size(140, 42);
@@ -67,7 +69,7 @@
             // 
             // textQR
             // 
-            textQR.Location = new System.Drawing.Point(31, 265);
+            textQR.Location = new System.Drawing.Point(29, 315);
             textQR.Margin = new System.Windows.Forms.Padding(0);
             textQR.Name = "textQR";
             textQR.Size = new System.Drawing.Size(455, 31);
@@ -119,12 +121,37 @@
             dataGridView1.TabIndex = 44;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // ıconButton1
+            // 
+            ıconButton1.BackColor = System.Drawing.Color.RosyBrown;
+            ıconButton1.ForeColor = System.Drawing.Color.White;
+            ıconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            ıconButton1.IconColor = System.Drawing.Color.Black;
+            ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            ıconButton1.Location = new System.Drawing.Point(31, 225);
+            ıconButton1.Margin = new System.Windows.Forms.Padding(4);
+            ıconButton1.Name = "ıconButton1";
+            ıconButton1.Size = new System.Drawing.Size(140, 42);
+            ıconButton1.TabIndex = 49;
+            ıconButton1.Text = "Başlık";
+            ıconButton1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new System.Drawing.Point(175, 231);
+            textBox1.Margin = new System.Windows.Forms.Padding(0);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(311, 31);
+            textBox1.TabIndex = 48;
+            // 
             // QrCode
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.MistyRose;
             ClientSize = new System.Drawing.Size(1834, 979);
+            Controls.Add(ıconButton1);
+            Controls.Add(textBox1);
             Controls.Add(pictureBox1);
             Controls.Add(iconButton8);
             Controls.Add(textQR);
@@ -149,5 +176,7 @@
         private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private FontAwesome.Sharp.IconButton ıconButton1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

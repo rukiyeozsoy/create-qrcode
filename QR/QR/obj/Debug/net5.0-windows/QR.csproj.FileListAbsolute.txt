@@ -247,3 +247,4 @@ C:\Users\ASUS\Documents\GitHub\create-qrcode\QR\QR\obj\Debug\net5.0-windows\refi
 C:\Users\ASUS\Documents\GitHub\create-qrcode\QR\QR\obj\Debug\net5.0-windows\QR.pdb
 C:\Users\ASUS\Documents\GitHub\create-qrcode\QR\QR\obj\Debug\net5.0-windows\QR.genruntimeconfig.cache
 C:\Users\ASUS\Documents\GitHub\create-qrcode\QR\QR\obj\Debug\net5.0-windows\ref\QR.dll
+C:\Users\ASUS\Documents\GitHub\create-qrcode\QR\QR\obj\Debug\net5.0-windows\QR.SSS.resources
