@@ -42,6 +42,8 @@
             label8 = new System.Windows.Forms.Label();
             ıconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             ıconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            label9 = new System.Windows.Forms.Label();
+            label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)ıconPictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ıconPictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ıconPictureBox2).BeginInit();
@@ -95,9 +97,9 @@
             label1.ForeColor = System.Drawing.Color.RosyBrown;
             label1.Location = new System.Drawing.Point(219, 225);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(176, 32);
+            label1.Size = new System.Drawing.Size(0, 32);
             label1.TabIndex = 47;
-            label1.Text = "QR kod nedir?";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -108,6 +110,7 @@
             label2.Size = new System.Drawing.Size(1086, 108);
             label2.TabIndex = 48;
             label2.Text = resources.GetString("label2.Text");
+            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -171,6 +174,7 @@
             label8.Size = new System.Drawing.Size(275, 32);
             label8.TabIndex = 53;
             label8.Text = "QR kodu nasıl tararım?";
+            label8.Click += label8_Click;
             // 
             // ıconPictureBox2
             // 
@@ -200,12 +204,35 @@
             ıconPictureBox3.TabIndex = 51;
             ıconPictureBox3.TabStop = false;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label9.ForeColor = System.Drawing.Color.RosyBrown;
+            label9.Location = new System.Drawing.Point(219, 225);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(0, 32);
+            label9.TabIndex = 57;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label10.ForeColor = System.Drawing.Color.RosyBrown;
+            label10.Location = new System.Drawing.Point(219, 225);
+            label10.Name = "label10";
+            label10.Size = new System.Drawing.Size(176, 32);
+            label10.TabIndex = 58;
+            label10.Text = "QR kod nedir?";
+            // 
             // SSS
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.MistyRose;
             ClientSize = new System.Drawing.Size(1834, 979);
+            Controls.Add(label10);
+            Controls.Add(label9);
             Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(label7);
@@ -244,5 +271,7 @@
         private System.Windows.Forms.Label label8;
         private FontAwesome.Sharp.IconPictureBox ıconPictureBox2;
         private FontAwesome.Sharp.IconPictureBox ıconPictureBox3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

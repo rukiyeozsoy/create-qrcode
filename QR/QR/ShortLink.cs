@@ -85,7 +85,6 @@ namespace QR
 
         private string ShortenUrl(string longUrl)
         {
-            // Kısaltma mantığınızı burada uygulayın
 
             // Örnek olarak, kısaltılan URL'yi bir özel karakter dizisi ve rastgele sayılarla oluşturma
             string characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
